@@ -8,6 +8,6 @@ RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 EXPOSE 8081
 
-VOLUME ["/config", "/tv", "/data/complete"]
+VOLUME ["/sickbeard_data", "/tv", "/data/complete"]
 
-ENTRYPOINT ["python", "/sickbeard/SickBeard.py", "--datadir", "/config"]
+ENTRYPOINT ["python", "/sickbeard/SickBeard.py", "--datadir", "/sickbeard_data"]
